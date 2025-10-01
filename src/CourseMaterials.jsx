@@ -16,18 +16,12 @@ const CourseMaterials = () => {
           duration: "3 hours",
           objectives: [
             "Python  Programming basics",
-            "Master NumPy arrays and operations for numerical computing",
-            "Learn Pandas DataFrames for data manipulation",
-            "Understand data loading and basic exploration",
-            "Apply skills to real-world dataset (Titanic)"
+            "Master NumPy arrays and operations for numerical computing"
           ],
           timeline: [
             {  activity: "Introduction & Setup", content: "Course overview, environment setup (Anaconda/Colab), verify installations" },
             {  activity: "Python Basics", content: "Variables, Data Types, Control Flow, Functions, Classes, Modules, Error Handling" },
             {  activity: "NumPy Deep Dive", content: "Arrays, indexing, slicing, broadcasting, mathematical operations" },
-            {  activity: "Pandas Fundamentals", content: "Series, DataFrames, reading CSV, basic operations (head, describe, info)" },
-            {  activity: "Hands-on Practice", content: "Load Titanic dataset, explore columns, check data types, basic statistics" },
-            {  activity: "Mini Project", content: "Guided project: Analyze Titanic data - survival rates, age distribution, class analysis" },
             {  activity: "Q&A & Assignment", content: "Doubt clearing, assign homework on housing dataset" },
             {  activity: "Wrap-up", content: "Key takeaways, preview next week" }
           ],
@@ -35,19 +29,18 @@ const CourseMaterials = () => {
             "print(), type(), len(), input(), if-else, for-loop, while-loop, functions, classes, modules, error handling",
             "import numpy as np, pandas as pd",
             "np.array(), array operations, reshaping",
-            "pd.read_csv(), df.head(), df.info(), df.describe()",
-            "Indexing: df['column'], df[['col1', 'col2']]",
-            "Filtering: df[df['Age'] > 30]",
-            "Groupby: df.groupby('Sex')['Survived'].mean()"
+           
           ],
-          datasets: ["Titanic (Kaggle)", "Housing Prices (optional homework)"],
-          assignments: "Explore housing dataset: load data, find missing values, calculate average prices by location"
-        },
+          datasets: ["No dataset Needed"],
+          assignments: "Mini Project: Based on the concepts learned in the week, create a program to solve a real-world problem"
+        },  
         {
           id: "s2",
-          title: "week 2: Data Visualization & Preprocessing",
+          title: "week 2: Data Visualization & Data Preprocessing",
           duration: "3 hours",
-          objectives: [
+          objectives: [ "Learn Pandas DataFrames for data manipulation",
+            "Understand data loading and basic exploration",
+            "Apply skills to real-world dataset (Titanic)",
             "Create meaningful visualizations with Matplotlib & Seaborn",
             "Handle missing data effectively",
             "Encode categorical variables",
@@ -56,6 +49,9 @@ const CourseMaterials = () => {
           ],
           timeline: [
             {  activity: "Recap & Homework Review", content: "Quick review of week 1, discuss homework solutions" },
+            {  activity: "Pandas Fundamentals", content: "Series, DataFrames, reading CSV, basic operations (head, describe, info)" },
+            {  activity: "Hands-on Practice", content: "Load Titanic dataset, explore columns, check data types, basic statistics" },
+            {  activity: "Mini Project", content: "Guided project: Analyze Titanic data - survival rates, age distribution, class analysis" },  
             {  activity: "Data Visualization", content: "Matplotlib basics, Seaborn for statistical plots, histograms, scatter plots, heatmaps" },
             {  activity: "Handling Missing Data", content: "Identify nulls, strategies (drop, mean/median imputation, forward fill)" },
             {  activity: "Feature Engineering", content: "Label encoding, one-hot encoding, feature scaling (StandardScaler, MinMaxScaler)" },
@@ -64,15 +60,19 @@ const CourseMaterials = () => {
           {  activity: "Wrap-up", content: "Summary, prepare for ML next Module" }
           ],
           codeTopics: [
+            "pd.read_csv(), df.head(), df.info(), df.describe()",
+            "Indexing: df['column'], df[['col1', 'col2']]",
+            "Filtering: df[df['Age'] > 30]",
+            "Groupby: df.groupby('Sex')['Survived'].mean()",
             "import matplotlib.pyplot as plt, seaborn as sns",
             "plt.hist(), plt.scatter(), sns.heatmap()",
-            "df.isnull().sum(), df.fillna(), df.dropna()",
+            "df.isnull().sum(), df.fillna(), df.dropna()",  
             "pd.get_dummies(), LabelEncoder",
             "from sklearn.preprocessing import StandardScaler",
             "from sklearn.model_selection import train_test_split"
           ],
-          datasets: ["Customer Churn (with missing values)", "Iris Dataset"],
-          assignments: "Preprocess a new dataset: visualize distributions, handle missing data, encode features, split data"
+          datasets: ["Titanic (Kaggle)", "Housing Prices (optional homework)"],
+          assignments: "Explore housing dataset: load data, find missing values, calculate average prices by location"
         }
       ]
     },
